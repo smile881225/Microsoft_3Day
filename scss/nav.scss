@@ -1,0 +1,15 @@
+nav {
+    width: 100%;
+    padding: 0 5%;
+    background-color: antiquewhite;
+}
+.nav-container {
+    max-width: 1600px;
+    height: 54px;
+    margin: 0 auto;
+    background-color: saddlebrown;
+    display: flex;
+        .logo {
+            width: 138px;
+        }
+}
