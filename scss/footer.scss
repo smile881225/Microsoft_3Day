@@ -1,6 +1,8 @@
 .footer-container {
     background-color: #f2f2f2;
-    width: 100%;
+    max-width: calc(1600px + 10%);
+    padding: 0 5%;
+    margin: 0 auto;
     height: 396px;
     color: #616161;
     .footer-list {
@@ -8,7 +10,8 @@
         max-width: 1600px;
         margin: 0 auto 45px;
         ul {
-            height:310px;
+            width: 16.6666666667%;
+            height: 310px;
             p {
                 padding-top: 32px;
                 // color: #616161;
@@ -24,25 +27,6 @@
                 }
             }
         }
-
-        ul:nth-of-type(1) {
-            width: 291.5px;
-        }
-        ul:nth-of-type(2) {
-            width: 265px;
-        }
-        ul:nth-of-type(3) {
-            width: 255px;
-        }
-        ul:nth-of-type(4) {
-            width: 278px;
-        }
-        ul:nth-of-type(5) {
-            width: 265px;
-        }
-        ul:nth-of-type(6) {
-            width: 269.5px;
-        }
     }
     .about-more {
         justify-content: end;
@@ -50,28 +34,35 @@
         max-width: 1600px;
         margin: 0 auto;
         font-size: 11px;
-        >a{
+        > a {
             display: flex;
             float: left;
             align-items: center;
             color: inherit;
-            .fa-globe-asia{
-               font-size: 20px;
+            .fa-globe-asia {
+                font-size: 20px;
                 margin-right: 10px;
             }
-        }ul{
+        }
+        > a:hover {
+            span {
+                text-decoration: underline;
+            }
+        }
+        ul {
             float: right;
             display: flex;
-            li{
+            li {
                 margin-right: 27px;
                 padding-top: 2px;
-                a{
+                a {
                     color: inherit;
                 }
             }
            
-            
         }
-
+    }
+    .hover:hover {
+        text-decoration: underline;
     }
 }

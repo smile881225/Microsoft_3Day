@@ -31,7 +31,8 @@
 }
 //自訂
 .swiper-container {
-    max-width: 1600px;
+    max-width: calc(1600px + 10% );
+    padding: 0 5%;
     margin: 0 auto;
     .swiper-slide {
         position: relative;
@@ -69,36 +70,83 @@
                 font-size: 15px;
                 font-weight: 600;
                 background-color: white;
+                span {
+                    margin-bottom: 2px;
+                    // border-bottom: 2px solid white;
+                }
+            }
+            .slide-1-detail-4:hover {
+                span {
+                    margin-bottom: 0;
+                    border-bottom: 2px solid black;
+                }
             }
         }
         //第二張投影片
-        .slide-2-detail-container{
+        .slide-2-detail-container {
             position: absolute;
             left: 90px;
             top: 221px;
             max-width: 520px;
-            .slide-2-detail-1{
+            .slide-2-detail-1 {
                 margin-bottom: 12px;
             }
-            .slide-2-detail-2{
+            .slide-2-detail-2 {
                 margin-bottom: 15px;
             }
 
-            .slide-2-detail-3{
+            .slide-2-detail-3 {
                 display: flex;
-                .slide-2-detail-3-btn{
+                > a {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     height: 41px;
                     width: 185px;
                 }
-                .slide-2-detail-3-btn1{
+                
+                .slide-2-detail-3-btn1 {
                     background-color: black;
                     color: white;
+                    span{
+                    margin-bottom: 2px;
+                    //     border-bottom: 2px solid black;
+                    }
                 }
-               
+                .slide-2-detail-3-btn1:hover{
+                    span {
+                        margin-bottom: 0;
+                        border-bottom: 2px solid white;
+                    }
+                }
+                .slide-2-detail-3-btn2 {
+                    span{
+                        margin-bottom: 2px;
+                    //     border-bottom: 2px none #F4F4F4;
+                    }
+                }
+                .slide-2-detail-3-btn2:hover{
+                    span {
+                        margin-bottom: 0;
+                        border-bottom: 2px solid black;
+                    }
+                }
             }
         }
     }
+    .swiper-button-prev{
+        content: url(".././img/swiper-left-white.svg");
+        width: 42px;
+        height: 42px;
+        border-radius: 100%;
+    }
+    .swiper-button-next{
+        content: url(".././img/swiper-right-white.svg");
+        width: 42px;
+        height: 42px;
+        border-radius: 100%;
+        // background-color: white;
+        opacity: 0.6;
+    }
 }
+

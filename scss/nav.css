@@ -8,30 +8,25 @@ nav {
   max-width: 1600px;
   height: 55px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-top: 1px;
   font-size: 13px;
 }
 
-.nav-container > a {
+.nav-container > .logo {
+  float: left;
   padding: 13px 6px 16px 8px;
+  margin-right: 15px;
 }
 
-.nav-container > a .logo {
+.nav-container > .logo img {
   width: 108px;
 }
 
-.nav-container .hover:hover span {
-  border-bottom: 2px solid black;
-}
-
 .nav-container ul {
+  float: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 650px;
 }
 
 .nav-container ul a {
@@ -43,26 +38,34 @@ nav {
   font-size: 13px;
 }
 
-.nav-container .all-microsoft {
-  padding-top: 14px;
+.nav-container .nav-more {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.nav-container .nav-more a:nth-child(1) {
   margin-right: 40px;
 }
 
-.nav-container .all-microsoft .fa-angle-down {
+.nav-container .nav-more a:nth-child(1) .fa-angle-down {
   font-size: 19px;
 }
 
-.nav-container .search {
-  padding-top: 15px;
+.nav-container .nav-more a:nth-child(2) {
   margin-right: 60px;
 }
 
-.nav-container .shop-car {
-  padding-top: 15px;
+.nav-container .nav-more a:nth-child(3) {
   margin-right: 25px;
 }
 
-.nav-container .login {
+.nav-container .nav-more a:nth-child(4) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,14 +75,33 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -6px;
 }
 
-.nav-container .login span {
+.nav-container .nav-more a:nth-child(4) span {
   margin-right: 10px;
 }
 
-.nav-container .login img {
+.nav-container .nav-more a:nth-child(4) img {
   width: 32px;
+}
+
+.nav-container .nav-more a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container .nav-more a span {
+  font-size: 13px;
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+
+.nav-container .hover:hover span {
+  margin-bottom: 0px;
+  border-bottom: 2px solid black;
 }
 /*# sourceMappingURL=nav.css.map */

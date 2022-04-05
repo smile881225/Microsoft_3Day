@@ -1,6 +1,8 @@
 .footer-container {
   background-color: #f2f2f2;
-  width: 100%;
+  max-width: calc(1600px + 10%);
+  padding: 0 5%;
+  margin: 0 auto;
   height: 396px;
   color: #616161;
 }
@@ -14,6 +16,7 @@
 }
 
 .footer-container .footer-list ul {
+  width: 16.6666666667%;
   height: 310px;
 }
 
@@ -30,30 +33,6 @@
 .footer-container .footer-list ul li a {
   color: inherit;
   font-size: 12px;
-}
-
-.footer-container .footer-list ul:nth-of-type(1) {
-  width: 291.5px;
-}
-
-.footer-container .footer-list ul:nth-of-type(2) {
-  width: 265px;
-}
-
-.footer-container .footer-list ul:nth-of-type(3) {
-  width: 255px;
-}
-
-.footer-container .footer-list ul:nth-of-type(4) {
-  width: 278px;
-}
-
-.footer-container .footer-list ul:nth-of-type(5) {
-  width: 265px;
-}
-
-.footer-container .footer-list ul:nth-of-type(6) {
-  width: 269.5px;
 }
 
 .footer-container .about-more {
@@ -82,6 +61,10 @@
   margin-right: 10px;
 }
 
+.footer-container .about-more > a:hover span {
+  text-decoration: underline;
+}
+
 .footer-container .about-more ul {
   float: right;
   display: -webkit-box;
@@ -96,5 +79,9 @@
 
 .footer-container .about-more ul li a {
   color: inherit;
+}
+
+.footer-container .hover:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=footer.css.map */
