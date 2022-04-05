@@ -6,15 +6,80 @@ nav {
 
 .nav-container {
   max-width: 1600px;
-  height: 54px;
+  height: 55px;
   margin: 0 auto;
-  background-color: saddlebrown;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 1px;
+  font-size: 13px;
 }
 
-.nav-container .logo {
-  width: 138px;
+.nav-container > a {
+  padding: 13px 6px 16px 8px;
+}
+
+.nav-container > a .logo {
+  width: 108px;
+}
+
+.nav-container .hover:hover span {
+  border-bottom: 2px solid black;
+}
+
+.nav-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 650px;
+}
+
+.nav-container ul a {
+  display: inline-block;
+  padding: 17px 13px 11px;
+}
+
+.nav-container ul a span {
+  font-size: 13px;
+}
+
+.nav-container .all-microsoft {
+  padding-top: 14px;
+  margin-right: 40px;
+}
+
+.nav-container .all-microsoft .fa-angle-down {
+  font-size: 19px;
+}
+
+.nav-container .search {
+  padding-top: 15px;
+  margin-right: 60px;
+}
+
+.nav-container .shop-car {
+  padding-top: 15px;
+  margin-right: 25px;
+}
+
+.nav-container .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -6px;
+}
+
+.nav-container .login span {
+  margin-right: 10px;
+}
+
+.nav-container .login img {
+  width: 32px;
 }
 /*# sourceMappingURL=nav.css.map */

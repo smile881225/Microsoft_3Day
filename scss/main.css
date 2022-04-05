@@ -1,1 +1,186 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.main-container {
+  /*-------------------------------*/
+  /*-------------------------------*/
+}
+
+.main-container .buy-containr {
+  max-width: 1624px;
+  height: 222px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.main-container .buy-containr .buy {
+  width: 125px;
+  height: 222px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.main-container .buy-containr .buy.choose-Microsoft365 {
+  margin-right: 60px;
+}
+
+.main-container .buy-containr .buy.choose-Surface {
+  margin-right: 60px;
+}
+
+.main-container .product-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.main-container .product-list .product {
+  width: 25%;
+  height: 440px;
+  padding: 0 12px;
+}
+
+.main-container .product-list .product img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.main-container .product-list .product.product-1 img,
+.main-container .product-list .product.product-3 img {
+  margin-bottom: 0;
+}
+
+.main-container .product-list .product .new {
+  height: 26px;
+  background-color: #ffd800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container .product-list .product.product-1 .new {
+  width: 70px;
+  margin: 12px 0;
+}
+
+.main-container .product-list .product.product-3 .new {
+  width: 126px;
+  margin: 12px 0;
+}
+
+.main-container .product-list .product span {
+  font-weight: 600;
+  color: #0067b8;
+}
+
+.main-container .product-list .product h3 {
+  margin-bottom: 3px;
+}
+
+.main-container .product-list .product p {
+  margin-bottom: 5px;
+}
+
+.main-container .product-list .product a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .banner-2-container {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+}
+
+.main-container .banner-2-container .banner-2-detail {
+  position: absolute;
+  top: 233px;
+  left: 96px;
+}
+
+.main-container .banner-2-container .banner-2-detail h2 {
+  margin-bottom: 23px;
+}
+
+.main-container .banner-2-container .banner-2-detail p {
+  margin-bottom: 26px;
+}
+
+.main-container .banner-2-container .banner-2-detail .understand-deeper {
+  height: 38px;
+  width: 123px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .banner-2-container .banner-2-detail .understand-deeper span {
+  color: white;
+}
+
+.main-container .banner-2-container .banner-2-detail .understand-deeper i {
+  color: white;
+}
+
+.main-container .product-list-title {
+  margin: 0 auto 20px;
+  max-width: 1600px;
+  font-size: 24px;
+}
+
+.main-container .focus-on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .focus-on span {
+  margin-right: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-container .focus-on img {
+  margin-right: 15px;
+  width: 28px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -5,11 +5,65 @@ nav {
 }
 .nav-container {
     max-width: 1600px;
-    height: 54px;
+    height: 55px;
     margin: 0 auto;
-    background-color: saddlebrown;
     display: flex;
+    padding-top: 1px;
+    font-size: 13px;
+    > a {
+        padding: 13px 6px 16px 8px;
         .logo {
-            width: 138px;
+            width: 108px;
         }
+    }
+    .hover:hover{
+        span{
+            border-bottom: 2px solid black;
+        }
+    }
+    ul {
+        display: flex;
+        margin-right: 650px;
+        a {
+            display: inline-block;
+            padding: 17px 13px 11px;
+            span{
+                font-size: 13px;
+            }
+        }
+        // a:hover {
+        //     span{
+        //         border-bottom: 2px solid black;
+        //     }
+        // }
+       
+    }
+    .all-microsoft {
+        padding-top: 14px;
+        margin-right: 40px;
+        .fa-angle-down {
+            font-size: 19px;
+        }
+    }
+    
+    .search {
+        padding-top: 15px;
+        margin-right: 60px;
+    }
+    .shop-car {
+        padding-top: 15px;
+        margin-right: 25px;
+    }
+    .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -6px;
+        span {
+            margin-right: 10px;
+        }
+        img {
+            width: 32px;
+        }
+    }
 }
