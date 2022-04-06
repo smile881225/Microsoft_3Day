@@ -69,6 +69,7 @@
             }
             @media (max-width: 538px) {
                 height: 340px;
+                padding: 0 50px;
             }
             .slide-1-detail-1 {
                 background-color: #ffb900;
@@ -142,10 +143,15 @@
                 align-items: center;
                 flex-direction: column;
             }
+            @media (max-width: 539px) {
+                height: 340px;
+                padding: 0 50px;
+            }
             .slide-2-detail-1 {
                 margin-bottom: 12px;
                 @media (max-width: 768px) {
                     font-size: 20px;
+                    padding: 0 20px;
                 }
             }
 
