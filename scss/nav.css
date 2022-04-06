@@ -11,10 +11,16 @@ nav {
   font-size: 13px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1083px) {
   .nav-container {
     max-width: 100%;
-    padding: 0;
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 860px) {
+  .nav-container {
+    display: none;
   }
 }
 
@@ -28,23 +34,88 @@ nav {
   width: 108px;
 }
 
-.nav-container ul {
+.nav-container > ul {
   float: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  height: 100%;
 }
 
-.nav-container ul a {
+.nav-container > ul li > .hover:hover span {
+  margin-bottom: 0px;
+  border-bottom: 2px solid black;
+}
+
+@media (max-width: 890px) {
+  .nav-container > ul li:nth-child(5),
+  .nav-container > ul li:nth-child(6) {
+    display: none;
+  }
+}
+
+@media (max-width: 870px) {
+  .nav-container > ul li:nth-child(4) {
+    display: none;
+  }
+}
+
+.nav-container > ul .nav-more-btn {
+  display: none;
+}
+
+@media (max-width: 890px) {
+  .nav-container > ul .nav-more-btn {
+    display: block;
+  }
+}
+
+.nav-container > ul .nav-more {
+  position: absolute;
+  top: 55px;
+  left: 307.5px;
+  z-index: 2;
+  width: 168px;
+  background-color: #f2f2f2;
+  display: none;
+}
+
+@media (max-width: 870px) {
+  .nav-container > ul .nav-more {
+    left: 237.5px;
+  }
+}
+
+.nav-container > ul .nav-more > ul li:first-of-type {
+  display: none;
+}
+
+@media (max-width: 870px) {
+  .nav-container > ul .nav-more > ul li:first-of-type {
+    display: block;
+  }
+}
+
+.nav-container > ul .nav-more > ul li:last-of-type {
+  border-bottom: 2px solid black;
+}
+
+.nav-container > ul .nav-more > ul .more-hover:hover span {
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+
+.nav-container > ul a {
   display: inline-block;
   padding: 17px 13px 11px;
 }
 
-.nav-container ul a span {
+.nav-container > ul a span {
   font-size: 13px;
 }
 
-.nav-container .nav-more {
+.nav-container .nav-other {
   float: right;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,35 +126,35 @@ nav {
   height: 100%;
 }
 
-.nav-container .nav-more a:nth-child(1) {
+.nav-container .nav-other a:nth-child(1) {
   margin-right: 40px;
 }
 
-.nav-container .nav-more a:nth-child(1) .fa-angle-down {
+.nav-container .nav-other a:nth-child(1) .fa-angle-down {
   font-size: 19px;
 }
 
-.nav-container .nav-more a:nth-child(2) {
+.nav-container .nav-other a:nth-child(2) {
   margin-right: 60px;
 }
 
 @media (max-width: 1399px) {
-  .nav-container .nav-more a:nth-child(2) span {
+  .nav-container .nav-other a:nth-child(2) span {
     display: none;
   }
 }
 
-.nav-container .nav-more a:nth-child(3) {
+.nav-container .nav-other a:nth-child(3) {
   margin-right: 25px;
 }
 
 @media (max-width: 1399px) {
-  .nav-container .nav-more a:nth-child(3) span {
+  .nav-container .nav-other a:nth-child(3) span {
     display: none;
   }
 }
 
-.nav-container .nav-more a:nth-child(4) {
+.nav-container .nav-other a:nth-child(4) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,21 +166,21 @@ nav {
           align-items: center;
 }
 
-.nav-container .nav-more a:nth-child(4) span {
+.nav-container .nav-other a:nth-child(4) span {
   margin-right: 10px;
 }
 
 @media (max-width: 1399px) {
-  .nav-container .nav-more a:nth-child(4) span {
+  .nav-container .nav-other a:nth-child(4) span {
     display: none;
   }
 }
 
-.nav-container .nav-more a:nth-child(4) img {
+.nav-container .nav-other a:nth-child(4) img {
   width: 32px;
 }
 
-.nav-container .nav-more a {
+.nav-container .nav-other a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,15 +189,87 @@ nav {
           align-items: center;
 }
 
-.nav-container .nav-more a span {
+.nav-container .nav-other a span {
   font-size: 13px;
   margin-bottom: 2px;
   white-space: nowrap;
 }
 
-.nav-container .nav-more > .hover:hover span {
+.nav-container .nav-other > .hover:hover span {
   margin-bottom: 0px;
   border-bottom: 2px solid black;
+}
+
+.nav-container-2 {
+  width: 100%;
+  height: 55px;
+  padding-top: 1px;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 860px) {
+  .nav-container-2 {
+    max-width: 100%;
+    padding: 0 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.nav-container-2 .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.nav-container-2 .nav-bar .fa-bars {
+  font-size: 24px;
+  margin-right: 25px;
+  display: none;
+}
+
+.nav-container-2 .nav-bar .fa-times {
+  font-size: 24px;
+  margin-right: 25px;
+  display: none;
+}
+
+.nav-container-2 > img {
+  width: 108px;
+}
+
+.nav-container-2 .member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container-2 .member a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container-2 .member a img {
+  width: 32px;
+  margin-left: 25px;
 }
 
 .all-Microsoft-coninter {
@@ -217,7 +360,70 @@ nav {
   border-bottom: 1px solid black;
 }
 
+.nav-bar-fold {
+  display: none;
+  background-color: #f2f2f2;
+  font-size: 15px;
+}
+
+.nav-bar-fold .fold-a {
+  padding: 15px 24px;
+  margin: 1px;
+}
+
+.nav-bar-fold .fold-a:last-child {
+  border-bottom: 1px solid black;
+}
+
+.nav-bar-fold .fold-b ul {
+  display: none;
+}
+
+.nav-bar-fold .fold-b ul li {
+  margin: 1px;
+}
+
+.nav-bar-fold .fold-container {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 15px 24px;
+}
+
+.nav-bar-fold .fold-container span {
+  cursor: pointer;
+}
+
+.nav-bar-fold .fold-container .fold-btn {
+  cursor: pointer;
+}
+
+.nav-bar-fold .fold-container .fa-angle-down {
+  float: right;
+  font-size: 25px;
+}
+
+.nav-bar-fold > li {
+  cursor: pointer;
+  border-top: 1px solid #e6e6e6;
+}
+
+.nav-bar-fold > li ul {
+  padding-left: 25px;
+}
+
+.nav-bar-fold > li ul li {
+  padding: 15px 24px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.nav-bar-fold > li ul li:last-of-type {
+  border-bottom: 0;
+}
+
 .block {
-  display: block;
+  display: block !important;
+}
+
+.background-color {
+  background-color: #f2f2f2 !important;
 }
 /*# sourceMappingURL=nav.css.map */

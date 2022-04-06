@@ -6,6 +6,12 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: start;
+            padding-left: 6%;
+            height: 247px;
+        }
         .buy {
             width: 125px;
             height: 222px;
@@ -14,11 +20,28 @@
             align-items: center;
             text-align: center;
             padding-top: 80px;
+            @media (max-width: 768px) {
+                padding-top: 0;
+                width: auto;
+                height: 50px;
+                margin-right: 0;
+                flex-direction: unset;
+            }
+
+            img {
+                @media (max-width: 768px) {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
             &.choose-Microsoft365 {
                 margin-right: 60px;
             }
             &.choose-Surface {
                 margin-right: 60px;
+            }
+            span {
+                font-weight: 600;
             }
         }
         .hover:hover {
@@ -33,15 +56,36 @@
         max-width: calc(1624px + 10%);
         padding: 0 5%;
         margin: 0 auto;
+        flex-wrap: wrap;
+        @media (max-width: 1083px) {
+            padding: 0 calc(5% - 12px);
+        }
         .product {
             // width: 406px;
             width: 25%;
             height: 440px;
             padding: 0 12px;
+            @media (max-width: 1083px) {
+                width: 50%;
+            }
+            @media (max-width: 768px) {
+                height: 370px;
+            }
+            @media (max-width: 539px) {
+                width: 100%;
+                height: unset;
+                margin-bottom: 52px;
+            }
             img {
                 // width: 382px;
                 width: 100%;
                 margin-bottom: 50px;
+                @media (max-width: 1083px) {
+                    margin-bottom: 36px;
+                }
+                @media (max-width: 768px) {
+                    margin-bottom: 10px;
+                }
             }
             &.product-1 img,
             &.product-3 img {
@@ -74,7 +118,7 @@
             p {
                 margin-bottom: 5px;
             }
-            a {
+            .hover {
                 display: flex;
                 align-items: center;
                 span {
@@ -82,7 +126,7 @@
                 }
             }
         }
-        .hover{
+        .hover {
             display: inline;
         }
         .hover:hover {
@@ -98,11 +142,17 @@
         padding: 0 5%;
         margin: 0 auto;
         margin-bottom: 49px;
+        @media (max-width: 1083px) {
+            padding: 0;
+        }
         .img-conatiner {
             position: relative;
             width: 100%;
             img {
                 width: 100%;
+                @media (max-width: 768px) {
+                    display: block;
+                }
             }
             .banner-2-detail {
                 // width: 88%;
@@ -112,15 +162,31 @@
                 top: 50%;
                 left: 6%;
                 transform: translateY(-50%);
-               
+                @media (max-width: 768px) {
+                    position: static;
+                    transform: translateY(0%);
+                    background-color: #e6e6e6;
+                    max-width: 100%;
+                    height: 300px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
                 h2 {
                     margin-bottom: 23px;
                     @media (max-width: 1399px) {
                         font-size: 24px;
                     }
+                    @media (max-width: 768px) {
+                        margin-bottom: 5px;
+                    }
                 }
                 p {
                     margin-bottom: 26px;
+                    @media (max-width: 768px) {
+                        margin-bottom: 10px;
+                    }
                 }
                 a {
                     height: 38px;
@@ -158,6 +224,10 @@
         padding: 0 5%;
         margin: 0 auto 50px;
         align-items: center;
+        @media (max-width: 1083px) {
+            max-width: 100%;
+            padding: 20px 24px 0;
+        }
         span {
             margin-right: 15px;
             color: rgba(0, 0, 0, 0.6);
