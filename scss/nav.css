@@ -2,6 +2,7 @@ nav {
   width: 100%;
   padding: 0 5%;
   background-color: antiquewhite;
+  position: relative;
 }
 
 .nav-container {
@@ -61,8 +62,20 @@ nav {
   margin-right: 60px;
 }
 
+@media (max-width: 1399px) {
+  .nav-container .nav-more a:nth-child(2) span {
+    display: none;
+  }
+}
+
 .nav-container .nav-more a:nth-child(3) {
   margin-right: 25px;
+}
+
+@media (max-width: 1399px) {
+  .nav-container .nav-more a:nth-child(3) span {
+    display: none;
+  }
 }
 
 .nav-container .nav-more a:nth-child(4) {
@@ -79,6 +92,12 @@ nav {
 
 .nav-container .nav-more a:nth-child(4) span {
   margin-right: 10px;
+}
+
+@media (max-width: 1399px) {
+  .nav-container .nav-more a:nth-child(4) span {
+    display: none;
+  }
 }
 
 .nav-container .nav-more a:nth-child(4) img {
@@ -100,8 +119,93 @@ nav {
   white-space: nowrap;
 }
 
-.nav-container .hover:hover span {
+.nav-container .nav-more > .hover:hover span {
   margin-bottom: 0px;
   border-bottom: 2px solid black;
+}
+
+.all-Microsoft-coninter {
+  position: absolute;
+  width: 1230px;
+  background-color: #f2f2f2;
+  top: 50px;
+  left: 87px;
+  z-index: 2;
+  display: none;
+}
+
+.all-Microsoft-coninter .all-Microsoft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all-Microsoft-coninter .all-Microsoft ul {
+  width: 195px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.all-Microsoft-coninter .all-Microsoft ul p {
+  padding: 18px 0px 18px 24px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.all-Microsoft-coninter .all-Microsoft ul li {
+  padding: 12px 0px 12px 24px;
+}
+
+.all-Microsoft-coninter .all-Microsoft ul li span {
+  font-size: 13px;
+}
+
+.all-Microsoft-coninter .view-map {
+  height: 38px;
+  background-color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.all-Microsoft-coninter .view-map > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all-Microsoft-coninter .view-map > a span {
+  margin-bottom: 1px;
+  font-size: 13px;
+}
+
+.all-Microsoft-coninter .view-map > a .fa-angle-right {
+  color: #262626;
+  opacity: 0.5;
+}
+
+.all-Microsoft-coninter .hover:hover span {
+  margin-bottom: 0px;
+  border-bottom: 1px solid black;
+}
+
+.block {
+  display: block;
 }
 /*# sourceMappingURL=nav.css.map */

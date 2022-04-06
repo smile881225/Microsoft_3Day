@@ -2,6 +2,7 @@ nav {
     width: 100%;
     padding: 0 5%;
     background-color: antiquewhite;
+    position: relative;
 }
 .nav-container {
     max-width: 1600px;
@@ -29,7 +30,7 @@ nav {
             }
         }
     }
-    .nav-more{
+    .nav-more {
         float: right;
         display: flex;
         align-items: center;
@@ -42,9 +43,19 @@ nav {
         }
         a:nth-child(2) {
             margin-right: 60px;
+            span {
+                @media (max-width: 1399px) {
+                    display: none;
+                }
+            }
         }
         a:nth-child(3) {
             margin-right: 25px;
+            span {
+                @media (max-width: 1399px) {
+                    display: none;
+                }
+            }
         }
         a:nth-child(4) {
             display: flex;
@@ -52,26 +63,87 @@ nav {
             align-items: center;
             span {
                 margin-right: 10px;
+                @media (max-width: 1399px) {
+                    display: none;
+                }
             }
             img {
                 width: 32px;
             }
         }
-        a{
+        a {
             display: flex;
             align-items: center;
-            span{
+            span {
                 font-size: 13px;
                 margin-bottom: 2px;
-                white-space:nowrap;
+                white-space: nowrap;
+            }
+        }
+        > .hover:hover {
+            span {
+                margin-bottom: 0px;
+                border-bottom: 2px solid black;
             }
         }
     }
-   
+}
+.all-Microsoft-coninter {
+    position: absolute;
+    width: 1230px;
+    background-color: #f2f2f2;
+    top: 50px;
+    left: 87px;
+    z-index: 2;
+    display: none;
+    .all-Microsoft {
+        display: flex;
+        ul {
+            width: 195px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            p {
+                padding: 18px 0px 18px 24px;
+                font-size: 13px;
+                font-weight: 600;
+            }
+            li {
+                padding: 12px 0px 12px 24px;
+                span {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .view-map {
+        height: 38px;
+        background-color: #e6e6e6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid black;
+        > a {
+            display: flex;
+            align-items: center;
+            span {
+                margin-bottom: 1px;
+                font-size: 13px;
+            }
+            .fa-angle-right {
+                color: #262626;
+                opacity: 0.5;
+            }
+        }
+    }
+
     .hover:hover {
         span {
             margin-bottom: 0px;
-            border-bottom: 2px solid black;
+            border-bottom: 1px solid black;
         }
     }
+}
+.block {
+    display: block;
 }
