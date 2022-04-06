@@ -1,16 +1,21 @@
 nav {
-  width: 100%;
-  padding: 0 5%;
-  background-color: antiquewhite;
   position: relative;
 }
 
 .nav-container {
-  max-width: 1600px;
+  max-width: calc(1600px + 10%);
+  padding: 0 5%;
   height: 55px;
   margin: 0 auto;
   padding-top: 1px;
   font-size: 13px;
+}
+
+@media (max-width: 1399px) {
+  .nav-container {
+    max-width: 100%;
+    padding: 0;
+  }
 }
 
 .nav-container > .logo {
@@ -132,6 +137,13 @@ nav {
   left: 87px;
   z-index: 2;
   display: none;
+}
+
+@media (max-width: 1399px) {
+  .all-Microsoft-coninter {
+    top: 50px;
+    left: 87px;
+  }
 }
 
 .all-Microsoft-coninter .all-Microsoft {

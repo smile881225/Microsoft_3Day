@@ -122,6 +122,10 @@
   margin-bottom: 2px;
 }
 
+.main-container .product-list .hover {
+  display: inline;
+}
+
 .main-container .product-list .hover:hover span {
   margin-bottom: 0;
   border-bottom: 2px solid #0067b8;
@@ -147,13 +151,18 @@
   position: absolute;
   top: 50%;
   left: 6%;
-  margin: 0 auto;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
 .main-container .banner-2-container .img-conatiner .banner-2-detail h2 {
   margin-bottom: 23px;
+}
+
+@media (max-width: 1399px) {
+  .main-container .banner-2-container .img-conatiner .banner-2-detail h2 {
+    font-size: 24px;
+  }
 }
 
 .main-container .banner-2-container .img-conatiner .banner-2-detail p {

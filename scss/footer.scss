@@ -4,21 +4,27 @@
     margin: 0 auto;
     height: 396px;
     color: #616161;
+
     .footer-list {
         display: flex;
-        max-width: 1600px;
+        max-width: calc(1600px + 10%);
         margin: 0 auto 45px;
+        padding: 0 5%;
+
         ul {
             width: 16.6666666667%;
             height: 310px;
+
             p {
                 padding-top: 32px;
                 // color: #616161;
                 color: inherit;
                 font-weight: 600;
             }
+
             li {
                 padding: 5.5px 0;
+
                 a {
                     // color: #616161;
                     color: inherit;
@@ -27,40 +33,49 @@
             }
         }
     }
+
     .about-more {
         justify-content: end;
         color: inherit;
-        max-width: 1600px;
+        max-width: calc(1600px + 10%);
+        padding: 0 5%;
         margin: 0 auto;
         font-size: 11px;
-        > a {
+
+        >a {
             display: flex;
             float: left;
             align-items: center;
             color: inherit;
+
             .fa-globe-asia {
                 font-size: 20px;
                 margin-right: 10px;
             }
         }
-        > a:hover {
+
+        >a:hover {
             span {
                 text-decoration: underline;
             }
         }
+
         ul {
             float: right;
             display: flex;
+
             li {
                 margin-right: 27px;
                 padding-top: 2px;
+
                 a {
                     color: inherit;
                 }
             }
-           
+
         }
     }
+
     .hover:hover {
         text-decoration: underline;
     }

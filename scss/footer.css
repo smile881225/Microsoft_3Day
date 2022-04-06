@@ -10,8 +10,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1600px;
+  max-width: calc(1600px + 10%);
   margin: 0 auto 45px;
+  padding: 0 5%;
 }
 
 .footer-container .footer-list ul {
@@ -39,7 +40,8 @@
       -ms-flex-pack: end;
           justify-content: end;
   color: inherit;
-  max-width: 1600px;
+  max-width: calc(1600px + 10%);
+  padding: 0 5%;
   margin: 0 auto;
   font-size: 11px;
 }

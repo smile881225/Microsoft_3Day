@@ -4,6 +4,7 @@
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+
     .swiper-slide {
         text-align: center;
         font-size: 18px;
@@ -21,6 +22,7 @@
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+
         img {
             display: block;
             width: 100%;
@@ -29,19 +31,28 @@
         }
     }
 }
+
 //自訂
 .swiper-container {
-    max-width: calc(1600px + 10% );
+    max-width: calc(1600px + 10%);
     padding: 0 5%;
     margin: 0 auto;
+
     .swiper-slide {
         position: relative;
+
         //第一張投影片
         .slide-1-detail-container {
             position: absolute;
-            left: 96px;
-            top: 202px;
+            // left: 96px;
+            // top: 202px;
             max-width: 520px;
+            top: 50%;
+            left: 6%;
+            transform: translateY(-50%);
+            @media (max-width: 1399px) {
+            max-width: 440px;
+            }
             .slide-1-detail-1 {
                 background-color: #ffb900;
                 height: 31px;
@@ -52,15 +63,21 @@
                 font-size: 15px;
                 margin-bottom: 8px;
             }
+
             .slide-1-detail-2 {
                 font-size: 34px;
                 color: white;
                 margin-bottom: 20px;
+                @media (max-width: 1399px) {
+                font-size: 24px;
+                }
             }
+
             .slide-1-detail-3 {
                 color: white;
                 margin-bottom: 20px;
             }
+
             .slide-1-detail-4 {
                 display: flex;
                 justify-content: center;
@@ -70,11 +87,13 @@
                 font-size: 15px;
                 font-weight: 600;
                 background-color: white;
+
                 span {
                     margin-bottom: 2px;
                     // border-bottom: 2px solid white;
                 }
             }
+
             .slide-1-detail-4:hover {
                 span {
                     margin-bottom: 0;
@@ -82,50 +101,60 @@
                 }
             }
         }
+
         //第二張投影片
         .slide-2-detail-container {
             position: absolute;
-            left: 90px;
-            top: 221px;
+            // left: 90px;
+            // top: 221px;
             max-width: 520px;
+            top: 50%;
+            left: 6%;
+            transform: translateY(-50%);
             .slide-2-detail-1 {
                 margin-bottom: 12px;
             }
+
             .slide-2-detail-2 {
                 margin-bottom: 15px;
             }
 
             .slide-2-detail-3 {
                 display: flex;
-                > a {
+
+                >a {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     height: 41px;
                     width: 185px;
                 }
-                
+
                 .slide-2-detail-3-btn1 {
                     background-color: black;
                     color: white;
-                    span{
-                    margin-bottom: 2px;
-                    //     border-bottom: 2px solid black;
+
+                    span {
+                        margin-bottom: 2px;
+                        //     border-bottom: 2px solid black;
                     }
                 }
-                .slide-2-detail-3-btn1:hover{
+
+                .slide-2-detail-3-btn1:hover {
                     span {
                         margin-bottom: 0;
                         border-bottom: 2px solid white;
                     }
                 }
+
                 .slide-2-detail-3-btn2 {
-                    span{
+                    span {
                         margin-bottom: 2px;
-                    //     border-bottom: 2px none #F4F4F4;
+                        //     border-bottom: 2px none #F4F4F4;
                     }
                 }
-                .slide-2-detail-3-btn2:hover{
+
+                .slide-2-detail-3-btn2:hover {
                     span {
                         margin-bottom: 0;
                         border-bottom: 2px solid black;
@@ -134,19 +163,22 @@
             }
         }
     }
-    .swiper-button-prev{
+
+    .swiper-button-prev {
         content: url(".././img/swiper-left-white.svg");
         width: 42px;
         height: 42px;
         border-radius: 100%;
+        left: 0;
     }
-    .swiper-button-next{
+
+    .swiper-button-next {
         content: url(".././img/swiper-right-white.svg");
         width: 42px;
         height: 42px;
         border-radius: 100%;
         // background-color: white;
         opacity: 0.6;
+        right: 0;
     }
 }
-
