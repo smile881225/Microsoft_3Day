@@ -282,6 +282,9 @@ nav {
     }
 }
 .nav-bar-fold {
+    position: absolute;
+    width: calc(100vw - 17px);
+    z-index: 2;
     display: none;
     background-color: #f2f2f2;
     font-size: 15px;
@@ -291,6 +294,7 @@ nav {
     }
     .fold-a:last-child {
         border-bottom: 1px solid black;
+        margin-bottom: 0;
     }
     .fold-b {
         ul {
@@ -301,7 +305,7 @@ nav {
         }
     }
     .fold-container {
-        border-bottom: 1px solid #e6e6e6;
+        // border-bottom: 1px solid #e6e6e6;
         padding: 15px 24px;
         span {
             cursor: pointer;
@@ -319,6 +323,7 @@ nav {
         border-top: 1px solid #e6e6e6;
         ul {
             padding-left: 25px;
+            border-top: 1px solid #e6e6e6;
             li {
                 padding: 15px 24px;
                 border-bottom: 1px solid #e6e6e6;

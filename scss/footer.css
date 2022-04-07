@@ -8,13 +8,20 @@
 
 @media (max-width: 1083px) {
   .footer-container {
-    height: 715px;
+    height: 736px;
   }
 }
 
 @media (max-width: 768px) {
   .footer-container {
     height: 750px;
+  }
+}
+
+@media (max-width: 538px) {
+  .footer-container {
+    height: auto;
+    padding-bottom: 20px;
   }
 }
 
@@ -35,9 +42,21 @@
   }
 }
 
+@media (max-width: 768px) {
+  .footer-container .footer-list {
+    margin: 0 auto 25px;
+  }
+}
+
+@media (max-width: 538px) {
+  .footer-container .footer-list {
+    margin: 0 auto 33px;
+  }
+}
+
 .footer-container .footer-list ul {
   width: 16.6666666667%;
-  height: 310px;
+  height: 320px;
 }
 
 @media (max-width: 1083px) {
@@ -46,19 +65,51 @@
   }
 }
 
+@media (max-width: 538px) {
+  .footer-container .footer-list ul {
+    width: 100%;
+    height: 324px;
+  }
+}
+
 .footer-container .footer-list ul p {
   padding-top: 32px;
+  padding-bottom: 2px;
   color: inherit;
   font-weight: 600;
 }
 
 .footer-container .footer-list ul li {
-  padding: 5.5px 0;
+  padding: 5.4px 0;
 }
 
 .footer-container .footer-list ul li a {
   color: inherit;
   font-size: 12px;
+}
+
+.footer-container .footer-list ul li:first-child {
+  padding-bottom: 0;
+}
+
+@media (max-width: 538px) {
+  .footer-container .footer-list ul:nth-child(1),
+  .footer-container .footer-list ul:nth-child(2),
+  .footer-container .footer-list ul:last-child {
+    height: 228px;
+  }
+}
+
+.footer-container .footer-list ul:nth-child(1),
+.footer-container .footer-list ul:nth-child(4) {
+  width: 17.8%;
+}
+
+@media (max-width: 1083px) {
+  .footer-container .footer-list ul:nth-child(1),
+  .footer-container .footer-list ul:nth-child(4) {
+    width: 33.33333%;
+  }
 }
 
 .footer-container .about-more {
@@ -115,11 +166,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-container .about-more ul li {
   margin-right: 27px;
   padding-top: 2px;
+  white-space: nowrap;
+}
+
+@media (max-width: 538px) {
+  .footer-container .about-more ul li {
+    margin-right: 10px;
+    padding-top: 6px;
+  }
 }
 
 .footer-container .about-more ul li a {
@@ -129,6 +190,16 @@
 @media (max-width: 768px) {
   .footer-container .about-more ul {
     float: none;
+  }
+}
+
+.footer-container .about-more > ul {
+  padding-left: 5px;
+}
+
+@media (max-width: 538px) {
+  .footer-container .about-more > ul {
+    padding-left: 0;
   }
 }
 

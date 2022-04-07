@@ -361,6 +361,9 @@ nav {
 }
 
 .nav-bar-fold {
+  position: absolute;
+  width: calc(100vw - 17px);
+  z-index: 2;
   display: none;
   background-color: #f2f2f2;
   font-size: 15px;
@@ -373,6 +376,7 @@ nav {
 
 .nav-bar-fold .fold-a:last-child {
   border-bottom: 1px solid black;
+  margin-bottom: 0;
 }
 
 .nav-bar-fold .fold-b ul {
@@ -384,7 +388,6 @@ nav {
 }
 
 .nav-bar-fold .fold-container {
-  border-bottom: 1px solid #e6e6e6;
   padding: 15px 24px;
 }
 
@@ -408,6 +411,7 @@ nav {
 
 .nav-bar-fold > li ul {
   padding-left: 25px;
+  border-top: 1px solid #e6e6e6;
 }
 
 .nav-bar-fold > li ul li {

@@ -5,10 +5,14 @@
     height: 396px;
     color: #616161;
     @media (max-width: 1083px) {
-        height: 715px;
+        height: 736px;
     }
     @media (max-width: 768px) {
         height: 750px;
+    }
+    @media (max-width: 538px) {
+        height: auto;
+        padding-bottom: 20px;
     }
     .footer-list {
         display: flex;
@@ -19,28 +23,52 @@
             flex-wrap: wrap;
             padding: 0 12px 0 24px;
         }
-
+        @media (max-width: 768px) {
+            margin: 0 auto 25px;
+        }
+        @media (max-width: 538px) {
+            margin: 0 auto 33px;
+        }
         ul {
             width: 16.6666666667%;
-            height: 310px;
+            height: 320px;
             @media (max-width: 1083px) {
                 width: 33.33333%;
             }
+            @media (max-width: 538px) {
+                width: 100%;
+                height: 324px;
+            }
             p {
                 padding-top: 32px;
-                // color: #616161;
+                padding-bottom: 2px;
                 color: inherit;
                 font-weight: 600;
             }
-
             li {
-                padding: 5.5px 0;
-
+                padding: 5.4px 0;
                 a {
                     // color: #616161;
                     color: inherit;
                     font-size: 12px;
                 }
+            }
+            li:first-child {
+                padding-bottom: 0;
+            }
+        }
+        ul:nth-child(1),
+        ul:nth-child(2),
+        ul:last-child {
+            @media (max-width: 538px) {
+                height: 228px;
+            }
+        }
+        ul:nth-child(1),
+        ul:nth-child(4) {
+            width: 17.8%;
+            @media (max-width: 1083px) {
+                width: 33.33333%;
             }
         }
     }
@@ -83,15 +111,30 @@
         ul {
             float: right;
             display: flex;
+            flex-wrap: wrap;
             li {
                 margin-right: 27px;
                 padding-top: 2px;
+                white-space: nowrap;
+                @media (max-width: 538px) {
+                    margin-right: 10px;
+                    padding-top: 6px;
+                }
                 a {
                     color: inherit;
                 }
             }
             @media (max-width: 768px) {
                 float: none;
+            }
+            // @media (max-width: 538px) {
+            //     margin-bottom: 20px;
+            // }
+        }
+        >ul{
+            padding-left: 5px;
+            @media (max-width: 538px) {
+                padding-left: 0;
             }
         }
     }
