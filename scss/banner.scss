@@ -78,6 +78,7 @@
             }
             img:nth-child(5) {
                 display: none;
+                // max-width: 100%;
                 @media (max-width: 539px) {
                     display: block;
                 }
@@ -105,14 +106,13 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                padding: 10px;//卡
             }
             @media (max-width: 538px) {
                 height: 340px;
                 padding: 0 50px;
             }
             @media (max-width: 500px) {
-                padding: 0;
+                padding: 0 5px;
             }
             .slide-1-detail-1 {
                 background-color: #ffb900;
@@ -135,8 +135,8 @@
                 }
                 @media (max-width: 768px) {
                     font-size: 20px;
-                margin-bottom: 5px;
-            }
+                    margin-bottom: 5px;
+                }
             }
 
             .slide-1-detail-3 {
@@ -202,6 +202,9 @@
                 height: 340px;
                 padding: 0 50px;
             }
+            @media (max-width: 500px) {
+                padding: 0 5px;
+            }
             .slide-2-detail-1 {
                 margin-bottom: 12px;
                 font-weight: 600;
@@ -211,8 +214,8 @@
                 @media (max-width: 768px) {
                     font-size: 20px;
                     padding: 0 20px;
-                margin-bottom: 5px;
-            }
+                    margin-bottom: 5px;
+                }
             }
 
             .slide-2-detail-2 {
@@ -222,8 +225,8 @@
                 }
                 @media (max-width: 768px) {
                     text-align: center;
-                margin-bottom: 10px;
-            }
+                    margin-bottom: 10px;
+                }
             }
 
             .slide-2-detail-3 {
@@ -233,6 +236,9 @@
                 }
                 @media (max-width: 768px) {
                     flex-direction: row;
+                }
+                @media (max-width: 500px) {
+                    display: inline;
                 }
                 > a {
                     display: flex;
